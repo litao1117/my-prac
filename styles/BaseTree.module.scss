@@ -1,0 +1,20 @@
+.page-container {
+    background: hsl(223deg 10% 90%);
+    display: flex;
+    height: 100vh;
+  
+    * {
+      border: 0;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+  
+    canvas {
+      display: block;
+      margin: auto;
+      object-fit: contain;
+      max-width: 100%;
+      max-height: 100vh;
+    }
+}

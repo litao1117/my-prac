@@ -1,0 +1,57 @@
+.webrtc-container {
+    display: flex;
+    justify-content: space-between;
+  
+    // align-items: center;
+  
+    .photo-list {
+      flex: 1;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 300px);
+      gap: 20px;
+  
+      // grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
+  
+      .item-image {
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+        overflow: hidden;
+  
+        // border: 2px dashed #333;
+        // border-radius: 50%;
+        // object-fit: cover;
+        img {
+          width: 300px;
+          height: 300px;
+        }
+      }
+    }
+  
+    .control {
+      position: sticky;
+      top: 100px;
+      right: 20px;
+  
+      // position: fixed;
+      // top: 80px;
+      // right: 20px;
+      background-color: #516fa3;
+      border: 5px solid #99beff;
+      border-radius: 50px;
+  
+      // width: 300px;
+      min-height: 300px;
+      max-height: 500px;
+      min-width: 300px;
+      max-width: 300px;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+      video {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+      }
+    }
+  }
